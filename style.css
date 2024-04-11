@@ -127,3 +127,103 @@ nav a {
         font-size: 0.9rem; /* Even smaller font size for smaller screens */
     }
 }
+
+
+/* Apply base font family */
+body {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+/* Style for "HELLO." */
+header .intro_section h6 {
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for "INTERACTION DESIGN STUDENT at CODE" */
+header .intro_section h6:last-of-type {
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for "Get In Touch" navigation link */
+nav a:last-child {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for "This is" */
+header .intro_section h1 {
+    color: white;
+    font-size: 96px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Since "Viola" is in the same element as "This is" but requires a different color,
+you'll need to wrap "Viola" in a span to apply a different style */
+header .intro_section h1 span {
+    color: black;
+}
+
+/* Style for "Viola Kempa" */
+nav a:first-child {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for "PAST EXPERIENCE" */
+.experience h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Style for "PRODUCT AND INVENTORY" */
+.experience .job-title {
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Style for dates "Oct. 2023 - current" */
+.experience .date {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for "Heyjobs" */
+.experience .company {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Style for buttons "Projects" and "About" */
+.menu-float_bottom button {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+    /* Additional styles for button appearance */
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+/* Remember to import the fonts used, if they're not default fonts and not already imported:
+You can import them in your CSS file from Google Fonts or another font service, or use a local copy if you have one. */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
