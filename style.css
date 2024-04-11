@@ -1,6 +1,7 @@
 /* Apply base font family */
 body {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    line-height: 1.6;
 }
 
 /* Reset default margin and padding */
@@ -8,12 +9,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Set up a font (you may need to import the font or choose a web-safe alternative) */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
 }
 
 /* Style the header and navigation */
@@ -162,13 +157,18 @@ nav a:last-child {
 header .intro_section h1 {
     color: white;
     font-size: 96px;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Lemon', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
 }
 
-/* Since "Viola" is in the same element as "This is" but requires a different color,
-you'll need to wrap "Viola" in a span to apply a different style */
+.lemon-regular {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 header .intro_section h1 span {
     color: black;
 }
@@ -223,7 +223,3 @@ nav a:first-child {
     background-color: transparent;
     border: 1px solid black;
 }
-
-/* Remember to import the fonts used, if they're not default fonts and not already imported:
-You can import them in your CSS file from Google Fonts or another font service, or use a local copy if you have one. */
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
