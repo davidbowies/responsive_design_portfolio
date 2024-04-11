@@ -1,0 +1,129 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up a font (you may need to import the font or choose a web-safe alternative) */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Style the header and navigation */
+header {
+    width: 100%;
+    padding: 1rem;
+    background: #F9F7FF; /* Adjust the color as needed */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem; /* Space below nav */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-weight: bold;
+}
+
+/* Introduction section styles */
+.intro_section h1 {
+    font-size: 5.61rem; /* Large text size for the main heading */
+    margin-bottom: 0.5rem;
+}
+
+.intro_section h5 {
+    font-size: 1.777rem;
+    color: #666; /* Lighter text color */
+    margin-bottom: 0.5rem;
+}
+
+.intro_section h6 {
+    font-size: 1.333rem;
+    color: #666; /* Lighter text color */
+    margin-bottom: 0.5rem;
+}
+
+/* Menu at the bottom of the header */
+.menu-float_bottom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem; /* Space at the bottom */
+}
+
+.menu-float_bottom button {
+    padding: 0.5rem 1rem;
+    background-color: #fff; /* Button background */
+    border: 1px solid #ddd; /* Button border */
+    cursor: pointer;
+}
+
+/* Experience section styles */
+.experience {
+    background: #fff; /* Adjust the color as needed */
+    padding: 2rem;
+}
+
+.experience h2 {
+    font-size: 1.5rem;
+    color: #333; /* Heading color */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0; /* Space above and below each item */
+    border-bottom: 1px solid #eee; /* Separator line */
+}
+
+.experience-item:last-child {
+    border-bottom: none; /* No border on the last item */
+}
+
+.experience-item span {
+    flex-basis: 33.333%; /* Divide space equally */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .intro_section h1 {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
+
+    .menu-float_bottom button {
+        padding: 0.5rem; /* Smaller buttons on smaller screens */
+    }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-item span {
+        flex-basis: auto; /* Stack items on top of each other */
+        padding: 0.25rem 0; /* Space above and below each item */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 0.5rem; /* Space between links */
+    }
+
+    .intro_section h6,
+    .experience h2 {
+        font-size: 0.9rem; /* Even smaller font size for smaller screens */
+    }
+}
