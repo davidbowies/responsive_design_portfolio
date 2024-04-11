@@ -1,3 +1,8 @@
+/* Apply base font family */
+body {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -128,11 +133,6 @@ nav a {
     }
 }
 
-
-/* Apply base font family */
-body {
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-}
 
 /* Style for "HELLO." */
 header .intro_section h6 {
