@@ -11,8 +11,26 @@ body {
     box-sizing: border-box;
 }
 
+header, nav, .intro_section, .menu-float_bottom, .experience {
+    position: relative;
+    z-index: 2;  /* Ensure these elements are above the SVG */
+}
+
+.svg-purple-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the image is behind all other content */
+}
+
+/* Ensure other styles are correctly applied without overriding important positioning */
+
+
 /* Style the header and navigation */
 header {
+    position: relative;
     width: 100%;
     padding: 1rem;
     background: #F9F7FF; /* Adjust the color as needed */
@@ -49,6 +67,29 @@ nav a {
     margin-bottom: 0.5rem;
 }
 
+.svg-purple-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the image is behind all other content */
+}
+
+.ellipse-yellow {
+    position: absolute;
+    top: 50%;  /* Center vertically in the header */
+    left: 50%; /* Center horizontally in the header */
+    transform: translate(-50%, -50%); /* Centering adjustment */
+    width: 300px;
+    height: 300px;
+    background: #FFD705; /* Yellow color background if using as a div instead of img */
+    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px; /* Full circle */
+    filter: blur(100px);
+    z-index: -1; /* Above the background but below text and interactive elements */
+}
+
 /* Menu at the bottom of the header */
 .menu-float_bottom {
     display: flex;
@@ -66,7 +107,6 @@ nav a {
 
 /* Experience section styles */
 .experience {
-    background: #fff; /* Adjust the color as needed */
     padding: 2rem;
 }
 
@@ -122,10 +162,19 @@ nav a {
         margin-bottom: 0.5rem; /* Space between links */
     }
 
+    .intro_section h1 {
+        font-size: 2rem; /* Further reduction for small screens */
+    }
+
     .intro_section h6,
     .experience h2 {
-        font-size: 0.9rem; /* Even smaller font size for smaller screens */
+        font-size: 16px; /* Smaller font size for headings */
     }
+
+    .experience .job-title {
+        font-size: 12px; /* Even smaller font size for job titles */
+    }
+
 }
 
 
