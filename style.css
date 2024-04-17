@@ -2,6 +2,7 @@
 body {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     line-height: 1.6;
+    background-color: #F9F7FF;
 }
 
 /* Reset default margin and padding */
@@ -15,17 +16,6 @@ header, nav, .intro_section, .menu-float_bottom, .experience {
     position: relative;
     z-index: 2;  /* Ensure these elements are above the SVG */
 }
-
-.svg-purple-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Ensures the image is behind all other content */
-}
-
-/* Ensure other styles are correctly applied without overriding important positioning */
 
 
 /* Style the header and navigation */
@@ -51,7 +41,8 @@ nav a {
 
 /* Introduction section styles */
 .intro_section h1 {
-    font-size: 5.61rem; /* Large text size for the main heading */
+    text-align:center;
+    font-size: 5.61rem;
     margin-bottom: 0.5rem;
 }
 
@@ -69,20 +60,22 @@ nav a {
 
 .svg-purple-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 73px;
+    left: 86px;
+    width: 762px;
+    height: 1249px;
     z-index: -1; /* Ensures the image is behind all other content */
 }
 
 .ellipse-yellow {
     position: absolute;
-    top: 50%;  /* Center vertically in the header */
-    left: 50%; /* Center horizontally in the header */
+    top: 619px;
+    left: 1076px;
+    width: 222px;
+    height: 1190px;
+    /* top: 50%;  /* Center vertically in the header */
+    /* left: 50%; Center horizontally in the header */ */
     transform: translate(-50%, -50%); /* Centering adjustment */
-    width: 300px;
-    height: 300px;
     background: #FFD705; /* Yellow color background if using as a div instead of img */
     box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.25);
     border-radius: 9999px; /* Full circle */
@@ -90,21 +83,53 @@ nav a {
     z-index: -1; /* Above the background but below text and interactive elements */
 }
 
-/* Menu at the bottom of the header */
+/* Menu at the bottom of the header
 .menu-float_bottom {
     display: flex;
     justify-content: center;
     gap: 1rem;
     padding-bottom: 2rem; /* Space at the bottom */
-}
+/* }
 
 .menu-float_bottom button {
     padding: 0.5rem 1rem;
     background-color: #fff; /* Button background */
-    border: 1px solid #ddd; /* Button border */
-    cursor: pointer;
-}
+    /* border: 1px solid #ddd; /* Button border */
+    /* cursor: pointer; */
+/* }  */
+.center-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Takes full viewport height */
+  } 
+  
+.rectangle {
+    width: 262px;
+    height: 44px;  /* Height adjusted back if only one line of text is needed */
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 25px;
+    border: 0.50px solid rgba(105.58, 80.83, 204.57, 0.40);
+    backdrop-filter: blur(20px);
+    padding: 10px; /* Padding to prevent text touching the edges */
+    display: flex;
+    justify-content: space-between; /* Aligns children at each end */
+    align-items: center; /* Vertically centers the content */
+  }
+  
+  .label {
+    color: black;
+    font-size: 16px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+  
+  .projects, .about {
+    margin: 2px 0;
+  }
 
+  
 /* Experience section styles */
 .experience {
     padding: 2rem;
@@ -188,6 +213,7 @@ header .intro_section h6 {
 
 /* Style for "INTERACTION DESIGN STUDENT at CODE" */
 header .intro_section h6:last-of-type {
+    text-align: right;
     color: black;
     font-size: 24px;
     font-weight: 300;
