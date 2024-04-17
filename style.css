@@ -58,30 +58,60 @@ nav a {
     margin-bottom: 0.5rem;
 }
 
-.svg-purple-background {
+.container {
+    position: relative;
+    width: 664px;  /* Width of the largest vector */
+    height: 701px; /* Height of the largest vector */
+  }
+  
+  .vector1, .vector2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.vector1 {
+    width: 498px;
+    height: 526px;
+    background: #6A51CD;
+    box-shadow: 90px 90px 90px rgba(0, 0, 0, 0.5); /* Added transparency to shadow */
+    border: 1px solid black;
+    filter: blur(90px);
+  }
+  
+  .vector2 {
+    width: 664px;
+    height: 701px;
+    background: rgba(105.58, 80.83, 204.57, 0.47); /* Background with alpha transparency */
+    box-shadow: 90px 90px 90px rgba(0, 0, 0, 0.5); /* Consistent shadow style */
+    border: 1px solid black;
+    filter: blur(90px);
+  }
+  
+/* .svg-purple-background {
     position: absolute;
     top: 73px;
     left: 86px;
     width: 762px;
     height: 1249px;
     z-index: -1; /* Ensures the image is behind all other content */
-}
+/* } */
 
-.ellipse-yellow {
+/* .ellipse-yellow {
     position: absolute;
     top: 619px;
     left: 1076px;
     width: 222px;
-    height: 1190px;
+    height: 1190px; */
     /* top: 50%;  /* Center vertically in the header */
-    /* left: 50%; Center horizontally in the header */ */
-    transform: translate(-50%, -50%); /* Centering adjustment */
-    background: #FFD705; /* Yellow color background if using as a div instead of img */
-    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px; /* Full circle */
-    filter: blur(100px);
-    z-index: -1; /* Above the background but below text and interactive elements */
-}
+    /* left: 50%; Center horizontally in the header */ 
+    /* transform: translate(-50%, -50%); /* Centering adjustment */
+    /* background: #FFD705; /* Yellow color background if using as a div instead of img */
+    /* box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 9999px; Full circle */
+    /* filter: blur(100px); */ 
+    /* z-index: -1; Above the background but below text and interactive elements */
+/* } */ 
 
 /* Menu at the bottom of the header
 .menu-float_bottom {
@@ -115,6 +145,11 @@ nav a {
     display: flex;
     justify-content: space-between; /* Aligns children at each end */
     align-items: center; /* Vertically centers the content */
+    position: fixed; /* This will fix the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 50%; /* Centers the div horizontally */
+    transform: translateX(-50%); /* Precisely centers the div by shifting it back by half its width */
+    z-index: 1000; /* Ensures it stays above other content */
   }
   
   .label {
