@@ -87,7 +87,8 @@ nav a {
 .intro_section {
     position: relative;
     text-align: center;
-    z-index: 3;  
+    z-index: 3;
+    padding-bottom: 50px;  
 }
 
 
@@ -137,6 +138,7 @@ nav a {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+    margin-top: 300px;
 }
 
 .experience-item {
