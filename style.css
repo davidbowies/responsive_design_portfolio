@@ -90,6 +90,62 @@ nav a {
     z-index: 3;  
 }
 
+
+/* Styling for the center container */
+.center-container {
+    position: fixed; /* Keeps the position relative to the viewport */
+    left: 50%; /* Center horizontally */
+    bottom: 20px; /* 20 pixels from the bottom of the viewport */
+    transform: translateX(-50%); /* Adjust horizontal positioning to be perfectly centered */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    display: flex;
+    justify-content: center; /* Centers the rectangle horizontally */
+    align-items: center; /* Centers the rectangle vertically */
+}
+
+/* Styling for the rectangle that will now act as a menu container */
+.rectangle {
+    width: 262px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 25px;
+    border: 0.50px solid rgba(105.58, 80.83, 204.57, 0.40);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly around the links */
+    align-items: center; /* Vertically aligns the links */
+    padding: 0 10px; /* Adds horizontal padding */
+}
+
+/* Styling for the menu links */
+.label {
+    color: black;
+    font-size: 16px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 300;
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Additional hover effect for links for better user interaction */
+.label:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    cursor: pointer; /* Changes the cursor to a pointer */
+}
+
+/* Ensure responsiveness and accessibility */
+@media (max-width: 768px) {
+    .rectangle {
+        width: 90%; /* Adjusts width for smaller screens */
+        max-width: 262px; /* Ensures it does not exceed the maximum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .label {
+        font-size: 14px; /* Smaller font size for very small devices */
+    }
+}
+
 /* .container {
     position: relative;
     width: 664px;  /* Width of the largest vector */
@@ -201,11 +257,11 @@ nav a {
 /* Responsive design */
 @media (max-width: 768px) {
     .intro_section h1 {
-        font-size: 1.5rem; /* Smaller font size on smaller screens */
+        font-size: 1.5rem; 
     }
 
     .menu-float_bottom button {
-        padding: 0.5rem; /* Smaller buttons on smaller screens */
+        padding: 0.5rem; 
     }
 
     .experience-item {
@@ -214,8 +270,8 @@ nav a {
     }
 
     .experience-item span {
-        flex-basis: auto; /* Stack items on top of each other */
-        padding: 0.25rem 0; /* Space above and below each item */
+        flex-basis: auto; 
+        padding: 0.25rem 0; 
     }
 }
 
@@ -225,7 +281,7 @@ nav a {
     }
 
     nav a {
-        margin-bottom: 0.5rem; /* Space between links */
+        margin-bottom: 0.5rem; 
     }
 
     .intro_section h1 {
@@ -333,12 +389,12 @@ nav a:first-child {
 }
 
 /* Style for buttons "Projects" and "About" */
-.menu-float_bottom button {
+/* .menu-float_bottom button {
     color: black;
     font-size: 16px;
     font-weight: 300;
     word-wrap: break-word;
     /* Additional styles for button appearance */
-    background-color: transparent;
+    /* background-color: transparent;
     border: 1px solid black;
-}
+}  */
