@@ -132,6 +132,25 @@ nav a {
     cursor: pointer; /* Changes the cursor to a pointer */
 }
 
+/* Initial hidden state for the Experience section */
+.experience {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0; /* Space above and below each item */
+    border-bottom: 1px solid #eee; /* Separator line */
+}
+
+.experience-item:last-child {
+    border-bottom: none; /* No border on the last item */
+}
+
 /* Ensure responsiveness and accessibility */
 @media (max-width: 768px) {
     .rectangle {
